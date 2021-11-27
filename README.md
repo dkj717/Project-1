@@ -134,7 +134,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - name: Enable service on boot
     systemd:
       name: filebeat
-      enabled: yes          
+      enabled: yes</code></pre>          
   </details>
   </p>
   
