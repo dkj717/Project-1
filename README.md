@@ -102,7 +102,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
  </details>
   </p>
 
----
+<p>
+<details>
+    <summary>ELK Playbook</summary>
+  
+<pre><code>---
 - name: Installing and Launch Filebeat
   hosts: webservers
   become: yes
