@@ -1,4 +1,9 @@
-  - name: Download filebeat .deb
+ ---
+- name: Installing and Launch Filebeat
+  hosts: webservers
+  become: yes
+  tasks:
+ - name: Download filebeat .deb
     command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
 
   - name: Install .deb file
