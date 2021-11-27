@@ -102,6 +102,38 @@ These files have been tested and used to generate a live ELK deployment on Azure
  </details>
   </p>
 
+---
+- name: Installing and Launch Filebeat
+  hosts: webservers
+  become: yes
+  tasks:
+ - name: Download filebeat .deb
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
+
+  - name: Install .deb file
+    command: dpkg -i filebeat-7.4.0-amd64.deb
+
+  - name: Copy
+    copy:
+      src: /etc/ansible/filebeat-config.yml
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: Enable System Module
+    command: filebeat modules enable system
+
+  - name: Setup
+    command: filebeat setup
+
+ - name: Start service
+    command: service filebeat start
+
+  - name: Enable service on boot
+    systemd:
+      name: filebeat
+      enabled: yes          
+  </details>
+  </p>
+  
   This document contains the following details:
 - Description of the Topologu
 - Access Policies
