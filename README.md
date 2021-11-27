@@ -140,7 +140,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   
   <p>
 <details>
-    <summary>Filebeat Playbook</summary>
+    <summary>Metricbeat Playbook</summary>
   
  <pre><code>---
 - name: Install Metricbeat
