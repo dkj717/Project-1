@@ -138,6 +138,43 @@ These files have been tested and used to generate a live ELK deployment on Azure
   </details>
   </p>
   
+  <p>
+<details>
+    <summary>Filebeat Playbook</summary>
+  
+ <pre><code>---
+- name: Install Metricbeat
+  hosts: webservers
+  become: true
+  tasks:
+
+  - name: Download Metricbeat file
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
+
+  - name: Install .deb File
+    command: sudo dpkg -i metricbeat-7.6.1-amd64.deb
+
+  - name: Copy to Web VMs
+    copy:
+      src: /etc/ansible/Metricbeat-config.yml
+      dest: /etc/metricbeat/metricbeat.yml
+
+  - name: Enable and configure
+    command: metricbeat modules enable docker
+
+  - name: Setup
+    command: metricbeat setup -e
+
+ - name: Start
+    command: service metricbeat start
+
+  - name: Enable Metric on Boot
+    systemd:
+      name: metricbeat
+      enabled: yes</code></pre>
+  </details>
+  </p>
+  
   This document contains the following details:
 - Description of the Topologu
 - Access Policies
