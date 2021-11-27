@@ -99,7 +99,8 @@ These files have been tested and used to generate a live ELK deployment on Azure
       systemd:
         name: docker
         enabled: yes</code></pre>
-  <p>
+ </details>
+  </p>
 
   This document contains the following details:
 - Description of the Topologu
