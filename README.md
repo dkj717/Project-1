@@ -11,6 +11,45 @@ These files have been tested and used to generate a live ELK deployment on Azure
   <summary>DVWA Installation Playbook</summary>
   
   
+ <pre><code>---
+- name: Config Web VM with Docker
+  hosts: webservers
+  become: true
+  tasks:
+  - name: docker.io
+    apt:
+      force_apt_get: yes
+      update_cache: yes
+      name: docker.io
+      state: present
+
+  - name: Install pip3
+    apt:
+      force_apt_get: yes
+      name: python3-pip
+      state: present
+
+  - name: Install Docker python module
+    pip:
+      name: docker
+      state: present
+
+  - name: download and launch a docker web container
+    docker_container:
+      name: dvwa
+      image: cyberxsecurity/dvwa
+      state: started
+      restart_policy: always
+      published_ports: 80:80
+
+   - name: Enable docker service
+     systemd:
+       name: docker
+       enabled: yes
+  
+   </details>
+  </p>
+  
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
