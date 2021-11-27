@@ -187,13 +187,20 @@ These files have been tested and used to generate a live ELK deployment on Azure
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-
 Load balancing ensures that the application will be highly available, in addition to restricting inbound traffic to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+What aspect of security do load balancers protect? 
+Load Balancers protect the availability of a network. 
+
+What is the advantage of a jump box?
+It prevents VMs from being exposed via a public IP Address.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
+What does Filebeat watch for?
+
+
+What does Metricbeat record?
+
 
 The configuration details of each machine may be found below.
 
