@@ -210,19 +210,22 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the  machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+71.113.149.233
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump Box.
+Which machine did you allow to access your ELK VM? What was its IP address?
+Jump Box (10.0.0.4) ssh, User PC (71.113.149.233) port 5601
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                   | 71.113.149.233 ssh port 22   |
+| Web-1    | No                    | 10.0.0.4 ssh port 22                     |
+| Web-2    | No                    | 10.0.0.4 ssh port 22                     |
+| Load Balancer  | No              | 71.113.149.233 HTTP port 80                     |
+| Elk Server | No                  |  71.113.149.233 port 5601                    |
 
 ### Elk Configuration
 
