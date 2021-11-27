@@ -196,7 +196,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -206,6 +205,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Elk-Server |Monitor | 104.43.225.201/10.1.0.4 | Linux            |
 | Load Balancer | Load Balancing  | 52.150.13.68   | Linux    |
 | UserPC | Control  |  71.113.149.233  | Windows 10           |
+
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
