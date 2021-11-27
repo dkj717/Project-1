@@ -200,11 +200,12 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 20.120.92.29/ 10.0.0.4   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
+| Jump Box | Gateway  | 20.120.92.29/10.0.0.4   | Linux            |
+| Web-1    | Server    | 10.0.0.5  | Linux            |
+| Web-2    | Server    | 10.0.0.6  | Linux            |
+| Elk-Server |Monitor | 104.43.225.201/10.1.0.4 | Linux            |
+| Load Balancer | Load Balancing  | 52.150.13.68   | Linux    |
+| UserPC | Control  |  71.113.149.233  | Windows 10           |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
