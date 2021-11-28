@@ -216,7 +216,7 @@ The configuration details of each machine may be found below.
 | Web-2    | Server    | 10.0.0.6  | Linux            |
 | Elk-Server |Monitor | 104.43.225.201/10.1.0.4 | Linux            |
 | Load Balancer | Load Balancing  | 52.150.13.68   | Linux    |
-| UserPC | Control  |  71.113.149.233  | Windows 10           |
+| UserPC | Control  |  User Ip Address  | Windows 10           |
 
 ### Access Policies
 
@@ -233,11 +233,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                   | 71.113.149.233 ssh port 22   |
+| Jump Box | Yes                   | User IP Address ssh port 22   |
 | Web-1    | No                    | 10.0.0.4 ssh port 22                     |
 | Web-2    | No                    | 10.0.0.4 ssh port 22                     |
-| Load Balancer  | No              | 71.113.149.233 HTTP port 80                     |
-| Elk Server | No                  |  71.113.149.233 port 5601                    |
+| Load Balancer  | No              | User IP Address HTTP port 80                     |
+| Elk Server | No                  | User IP Address port 5601                    |
 
 ### Elk Configuration
 
@@ -317,7 +317,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the Filebeat-Playbook file to _/etc/ansible/_.
 - Update the host file to include
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook, and navigate to the Kibana server landing page (using your Elk server pubilc IP address) to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
