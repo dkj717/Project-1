@@ -201,9 +201,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 What does Filebeat watch for?
 
+Filebeat monitors the log files or locations that you specify for changes.
 
 What does Metricbeat record?
 
+Metricbeat takes the metrics and statistics and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 
@@ -240,7 +242,9 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+What is the main advantage of automating configuration with Ansible?
+
+Provisions can be easily made.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -249,7 +253,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Running Elk Docker](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
