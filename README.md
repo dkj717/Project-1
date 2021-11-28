@@ -247,9 +247,35 @@ What is the main advantage of automating configuration with Ansible?
 Provisions can be easily made.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- _Hosts and user specifications:_
+
+```
+- name: Configure Elk VM with Docker
+  hosts: elk
+  remote_user: azadmin
+  become: true
+  tasks:
+```
+
+- _Install packages:
+	- _Docker.io_
+	- _Python3-pip_
+	- _Docker elk container_
+
+- _Increase system memory:_
+```
+- name: Use more memory
+      sysctl:
+        name: vm.max_map_count
+        value: "262144"
+        state: present
+        reload: yes
+
+- _Launch docker container with these ports:_
+	- _5601:5601_
+	- _9200:9200_
+	- _5044:5044_
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
