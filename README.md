@@ -257,6 +257,16 @@ _Elk Server_
 
 ![Elk-Stack](https://github.com/dkj717/Project-1/blob/cfc94b715dae85a313f7a03284deb9781069880b/Images/ELK761%20Container.png)
 
+_Web-1_
+
+![Web-1 Docker ps] (https://github.com/dkj717/Project-1/blob/53f2a402668376e5af265e966e768f0903d1ad9a/Images/Web-1%20Docker%20ps.png)
+
+_Web-2_
+
+![Web-2 Docker ps}
+
+
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
