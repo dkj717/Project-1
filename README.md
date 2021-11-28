@@ -259,13 +259,11 @@ _Elk Server_
 
 _Web-1_
 
-![Web-1 Docker ps] (https://github.com/dkj717/Project-1/blob/53f2a402668376e5af265e966e768f0903d1ad9a/Images/Web-1%20Docker%20ps.png)
+![Web-1 Docker ps](https://github.com/dkj717/Project-1/blob/53f2a402668376e5af265e966e768f0903d1ad9a/Images/Web-1%20Docker%20ps.png)
 
 _Web-2_
 
-![Web-2 Docker ps}
-
-
+![Web-2 Docker ps](https://github.com/dkj717/Project-1/blob/62380a499a8ea6315c083ddfcc204771be55db56/Images/Web-2%20Docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
