@@ -271,7 +271,7 @@ The playbook implements the following tasks:
         value: "262144"
         state: present
         reload: yes
-
+```
 - _Launch docker container with these ports:_
 	- _5601:5601_
 	- _9200:9200_
