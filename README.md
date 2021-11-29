@@ -258,7 +258,7 @@ The playbook implements the following tasks:
   tasks:
 ```
 
-- _Install packages:
+- _Install packages:_
 	- _Docker.io_
 	- _Python3-pip_
 	- _Docker elk container_
